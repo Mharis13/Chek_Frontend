@@ -20,7 +20,7 @@ jobs:
         run: pnpm install
       - name: Run tests
         run: pnpm test
-      - name: Run linting 
+      - name: Run linting
         run: pnpm lint
-      - name: Check formatting 
+      - name: Check formatting
         run: pnpm format:check

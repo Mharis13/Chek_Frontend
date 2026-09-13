@@ -37,6 +37,7 @@
     "eslint-plugin-prettier": "^5.5.6",
     "husky": "^9.1.7",
     "jest": "^30.5.1",
+    "lint-staged": "^17.5.1",
     "prettier": "^3.9.6",
     "typescript": "~6.0.3"
   },
@@ -51,6 +52,10 @@
     "format:check": "prettier . --check",
     "test": "jest --passWithNoTests",
     "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{json,yml,yaml}": "prettier --write"
   },
   "private": true
 }
