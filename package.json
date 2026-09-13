@@ -2,7 +2,7 @@
   "name": "chek_frontend",
   "main": "expo-router/entry",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "dependencies": {
     "@expo/ui": "~57.0.17",
     "expo": "~57.0.21",
@@ -47,7 +47,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "format": "pnpm exec prettier . --check",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
     "test": "jest --passWithNoTests",
     "prepare": "husky"
   },
